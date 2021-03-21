@@ -1,0 +1,15 @@
+version: '3'
+services:
+  app:
+    build:
+      context: .
+      args:
+        NODE_VERSION: '14.16.0'
+    container_name: super_feato_bot_susanoo
+    working_dir: /usr/src/app
+    volumes:
+      - ./:/usr/src/app
+      - node_modules_app:/user/src/app/node_modules
+
+volumes:
+  node_modules_app:
