@@ -7,6 +7,7 @@ services:
         NODE_VERSION: '14.16.0'
     container_name: super_feato_bot_susanoo
     working_dir: /usr/src/app
+    env_file: .env
     volumes:
       - ./:/usr/src/app
       - node_modules_app:/user/src/app/node_modules
