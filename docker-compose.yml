@@ -10,7 +10,7 @@ services:
     env_file: .env
     volumes:
       - ./:/usr/src/app
-      - node_modules_app:/user/src/app/node_modules:delegated
+      - node_modules_app:/usr/src/app/node_modules:delegated
 
 volumes:
   node_modules_app:
