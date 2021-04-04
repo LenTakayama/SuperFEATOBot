@@ -12,4 +12,4 @@ RUN apt upgrade \
 
 RUN yarn install
 
-CMD yarn run production
+CMD ["yarn", "run", "production"]
